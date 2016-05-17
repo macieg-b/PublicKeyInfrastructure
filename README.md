@@ -1,2 +1,2 @@
 # PublicKeyInfrastructure
-It's repository of code develope to engineering thesis .
+It's repository of code develope to engineering thesis.
