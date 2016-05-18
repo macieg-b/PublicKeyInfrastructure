@@ -19,7 +19,7 @@ def index():
 	return render_template('index.html', days=daysDelta, hours=hoursDelta, minutes=minutesDelta, seconds=secondsDelta)
 
 @app.route('/api/cert/register', methods = ['POST'])
-def login():
+def register():
 	return None
 
 
