@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Maciej Bartłomiejczyk - engineering thesis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="static/style.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row text-center" id="formularz">
+        <h1 class="section-heading">Please login</h1>
+        <p>
+          to get access a documentation
+        </p>
+          <div class="col-sm-4 col-sm-offset-4">
+            <form action="" method="post">
+              <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon2"></span>
+                <input type="text" class="form-control" placeholder="Username" name="username" aria-describedby="sizing-addon2" value="{{
+                  request.form.username }}">
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon2"></span>
+                <input type="password" class="form-control" placeholder="Password" name="password" aria-describedby="sizing-addon2" value="{{
+                 request.form.password }}">
+              </div>
+              <div class="row">
+                <input class="btn btn-primary" type="submit" value="Login">
+              </div>
+            </form>
+            {% if error %}
+              <p class="error"><strong>Error:</strong> {{ error }}
+            {% endif %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
