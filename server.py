@@ -34,6 +34,10 @@ def login():
 def register():
 	return None
 
+@app.route('/api/ca/getCertificate', methods = ['GET'])
+def getCertificate():
+	return None
+
 
 if __name__ == '__main__':
 	timeModule.onStartOperation()
