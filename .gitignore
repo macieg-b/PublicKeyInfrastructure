@@ -65,3 +65,6 @@ target/
 setting.py
 *.pem
 nohup.out
+certificates
+addPost.py
+addPost.py~

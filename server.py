@@ -3,6 +3,7 @@ from datetime import datetime
 import json
 import timeModule
 import setting
+import cms
 
 app = Flask(__name__)
 app.secret_key = setting.secret_key
@@ -12,7 +13,8 @@ def index():
 	if 'username' in session:
 		if setting.admin in session['username']:
 			timeModule.timer()
-			return render_template('index.html', days=timeModule.daysDelta, hours=timeModule.hoursDelta, minutes=timeModule.minutesDelta, seconds=timeModule.secondsDelta)
+			information=cms.getInformationPosts()
+			return render_template('index.html', days=timeModule.daysDelta, hours=timeModule.hoursDelta, minutes=timeModule.minutesDelta, seconds=timeModule.secondsDelta, informacje=information)
 	return redirect(url_for('login'))
 
 @app.route('/', methods=['GET', 'POST'])
