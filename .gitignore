@@ -63,3 +63,5 @@ target/
 
 setting.py
 *.pem
+nohup.out
+
