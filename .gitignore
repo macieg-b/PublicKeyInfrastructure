@@ -61,6 +61,7 @@ target/
 #Ipython Notebook
 .ipynb_checkpoints
 
+#My ignore
 setting.py
 *.pem
 nohup.out
