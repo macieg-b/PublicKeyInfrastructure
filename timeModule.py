@@ -10,5 +10,5 @@ def timer():
 	timeDelta = datetime.now() - startTime
 	daysDelta = timeDelta.days
 	minutesDelta = int(timeDelta.seconds / 60) % 60
-	hoursDelta = int(minutesDelta / 60) % 24
+	hoursDelta = int(timeDelta.seconds / 3600) % 24
 	secondsDelta = timeDelta.seconds % 60
